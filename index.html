@@ -1,11 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Arun Jawlia : My First Website using HTML5 and used all elements</title>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
 </head>
+
 <body>
-    
+    <!-- Header of the website -->
+    <header>
+        <div class="logo">
+            <a href="#" tabindex="_blank">
+                <img height="50px" width="100px"
+                    src="https://masai-course.s3.ap-south-1.amazonaws.com/resources/images/masai_logo.svg"
+                    alt="masai logo">
+            </a>
+        </div>
+
+
+        <!-- Navbar of the website -->
+        <div>
+            <nav>
+                <ul style="list-style-type: none; display: flex; gap: 20px;  ">
+                    <li><a style="text-decoration: none;" href="#">Home</a></li>
+                    <li><a style="text-decoration: none;" href="#">About</a></li>
+                    <li><a style="text-decoration: none;" href="#">Contact</a></li>
+                    <li><a style="text-decoration: none;" href="#">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Hero Section of the website -->
+
+    <main>
+        <div class="hero-container">
+            <h1>I'm Arun Jawlia 👍 </h1>
+            <p>This website is all about website development using HTML and some basic css. Aim of making this website
+                to apply all the learning of HTML5.
+            </p>
+
+            <button>
+                <a style="text-decoration: none;" target="_blank" href="https://github.com/Arun-Jawlia">
+                    Github
+                </a>
+            </button>
+            <button><a style="text-decoration: none;" target="_blank"
+                    href="https://www.linkedin.com/in/arun-jawlia-0a262022b/">LinkedIn</a></button>
+        </div>
+
+        <br>
+        <!-- Hero Image  -->
+        <div class="hero-image">
+            <figure>
+                <img width="auto" height="400px" src="./images/banner_img.jpg" alt="a girl is working on her laptop">
+            </figure>
+
+
+        </div>
+    </main>
+
+
+    <!-- About Section -->
+
+    <section class="about-section">
+        <h2>About Arun Jawlia ✌️</h2>
+        <hr>
+        <div class="about-container">
+            <p>It's great to meet you all.</p>
+            <p>
+                Passionate MERN developer with a passion for
+                creating efficient, scalable, and user-friendly web
+                applications. Proficient in building dynamic frontend interfaces, implementing robust back-end
+                solutions, and optimizing performance. Committed
+                to delivering high-quality code within strict
+                deadlines. Ready to contribute to a fast-paced team
+                environment
+            </p>
+            <hr>
+        </div>
+    </section>
+
+
+    <!-- Skill Section -->
+
+    <section class="skill-container">
+        <h2>My Coding Knowledge</h2>
+        <!-- Html -->
+        <div class="skill-progess">
+            <label for="html"> HTML: </label>
+            <progress id="html" max="100" value="100"> 100% HTML</progress>
+        </div>
+        <!-- CSS -->
+        <div class="skill-progess">
+            <label for="css"> CSS: </label>
+            <progress id="css" max="100" value="100"> 100% CSS</progress>
+        </div>
+        <!-- JavaScript -->
+        <div class="skill-progess">
+            <label for="javascript"> JAVASCRIPT: </label>
+            <progress id="javascript" max="100" value="100"> 100% JavaScript</progress>
+        </div>
+        <!-- React -->
+        <div class="skill-progess">
+            <label for="react"> REACT: </label>
+            <progress id="react" max="100" value="100"> 100% React</progress>
+        </div>
+        <!-- Node -->
+        <div class="skill-progess">
+            <label for="node"> NODE: </label>
+            <progress id="node" max="100" value="100"> 100% Node</progress>
+        </div>
+        <!-- MongoDB -->
+        <div class="skill-progess">
+            <label for="mongodb"> MONGODB: </label>
+            <progress id="mongodb" max="100" value="100"> 100% MongoDB</progress>
+        </div>
+        <!-- Express -->
+        <div class="skill-progess">
+            <label for="express"> EXPRESS: </label>
+            <progress id="express" max="100" value="100"> 100% Express</progress>
+        </div>
+    </section>
+
+
+    <!-- Our Services Section -->
+
+    <section class="service-container">
+        <h2>Our Services</h2>
+        <div style="display: flex;">
+            <figure>
+                <img height="150px" width="250px"
+                    src="https://images.unsplash.com/photo-1560264280-88b68371db39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2VydmljZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1000&q=60"
+                    alt=" some people are working in office">
+                <figcaption>Website Development</figcaption>
+            </figure>
+            <figure>
+                <img height="150px" width="250px"
+                    src="https://images.unsplash.com/photo-1560264280-88b68371db39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2VydmljZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1000&q=60"
+                    alt=" some people are working in office">
+                <figcaption>Android App Development</figcaption>
+            </figure>
+            <figure>
+                <img height="150px" width="250px"
+                    src="https://images.unsplash.com/photo-1560264280-88b68371db39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2VydmljZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1000&q=60"
+                    alt=" some people are working in office">
+                <figcaption>Android App Development</figcaption>
+            </figure>
+        </div>
+    </section>
+
+
+    <!-- Blog Section -->
+
+    <section class="blog-container">
+        <h2>Our Blogs</h2>
+
+        <article>
+            <header>
+                <h3>What is HTML?</h3>
+                <ul>
+                    <li>HTML stands for Hyper Text Markup Language
+                    </li>
+                    <li>HTML is the standard markup language for creating Web pages</li>
+                    <li>HTML describes the structure of a Web page</li>
+                    <li>HTML elements tell the browser how to display the content</li>
+                    <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this
+                        is a link", etc.</li>
+
+                </ul>
+            </header>
+            <header>
+                <h3>2. What is CSS?</h3>
+                <ul>
+                    <li>CSS stands for Cascading Style Sheets</li>
+                    <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+                    <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+                    <li>External stylesheets are stored in CSS files</li>
+                </ul>
+            </header>
+            <header>
+                <h3>2. What is JavaScript</h3>
+                <ul>
+                    <li>
+                        JavaScript is the Programming Language for the Web.
+                    </li>
+                    <li>JavaScript can update and change both HTML and CSS.</li>
+                    <li>JavaScript can calculate, manipulate and validate data.</li>
+                </ul>
+            </header>
+
+
+
+            <p><strong><em>Thanks you for the reading till the end.</em></strong></p>
+        </article>
+    </section>
+
+<hr>
+
+    <!-- Audio Section -->
+    <section class="my-audio">
+        <h2>Please listen my introduction</h2>
+        <audio controls autoplay muted src="">
+            <source/>
+            Your browser does not supported the audio element.
+        </audio>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
 </html>
