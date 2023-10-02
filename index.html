@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arun Jawlia : My First Website using HTML5 and used all elements</title>
-    <meta name="description" content="Full Stack Web Developer. Front-end & Back-end Web Developer based
-in Delhi. Tech stack include React, JavaScript, Node, SQL.">
+    <meta name="description" content=" MERN Developer | Stack Web Developer | Frontend Developer | Backend Developer based
+in Delhi, Gurugram & Noida. ">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -14,6 +14,19 @@ in Delhi. Tech stack include React, JavaScript, Node, SQL.">
 
         body {
             font-family: 'Poppins', sans-serif;
+        }
+
+        table {
+            table-layout: fixed;
+            width: 100%;
+            border-collapse: collapse;
+            border: 3px solid purple;
+            text-align: center;
+        }
+        thead, th, tr, td
+        {
+            border: 3px solid purple;
+            padding: 5px;
         }
     </style>
 
@@ -23,7 +36,7 @@ in Delhi. Tech stack include React, JavaScript, Node, SQL.">
     <!-- Header of the website -->
     <header>
         <div class="logo">
-            <a href="#" target="_blank">
+            <a href="https://www.masaischool.com/" target="_blank">
                 <img height="50px" width="100px"
                     src="https://masai-course.s3.ap-south-1.amazonaws.com/resources/images/masai_logo.svg"
                     alt="masai logo">
@@ -32,21 +45,24 @@ in Delhi. Tech stack include React, JavaScript, Node, SQL.">
 
 
         <!-- Navbar of the website -->
+
         <div>
             <nav>
                 <ul style="list-style-type: none; display: flex; gap: 20px;  ">
-                    <li><a style="text-decoration: none;" href="#">Home</a></li>
-                    <li><a style="text-decoration: none;" href="#">About</a></li>
-                    <li><a style="text-decoration: none;" href="#">Contact</a></li>
-                    <li><a style="text-decoration: none;" href="#">Services</a></li>
+                    <li><a style="text-decoration: none;"
+                            href="https://www.linkedin.com/in/arun-jawlia-0a262022b/">Home</a></li>
+                    <li><a style="text-decoration: none;"
+                            href="https://www.linkedin.com/in/arun-jawlia-0a262022b/">About</a></li>
+                    <li><a style="text-decoration: none;" href="https://github.com/Arun-Jawlia">Contact</a></li>
+                    <li><a style="text-decoration: none;" href="https://github.com/Arun-Jawlia">Services</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
 
-    <!-- Hero Section of the website -->
 
+    <!------------- Hero Section of the website ------------------------->
     <main>
         <div class="hero-container">
             <h1>I'm Arun Jawlia 👍 </h1>
@@ -69,13 +85,13 @@ in Delhi. Tech stack include React, JavaScript, Node, SQL.">
             <figure>
                 <img width="600px" height="300px" src="./images/banner_img.jpg" alt="a girl is working on her laptop">
             </figure>
-
-
         </div>
     </main>
 
 
-    <!-- About Section -->
+
+
+    <!---------------------- About Section ------------------------>
 
     <section class="about-section">
         <h2>About Arun Jawlia ✌️</h2>
@@ -95,10 +111,77 @@ in Delhi. Tech stack include React, JavaScript, Node, SQL.">
         </div>
     </section>
 
+    <br>
+    <hr>
+    <br>
 
-    <!-- Skill Section -->
 
-    <section class="skill-container">
+    <section>
+        <h2>Build Table</h2>
+        <table >
+            <thead>
+                <tr>
+                    <th rowspan="3">Day</th>
+                    <th colspan="3">Seminar</th>
+                </tr>
+                <tr>
+                    <th colspan="2">Schedule</th>
+                    <th  rowspan="2">Topic</th>
+                </tr>
+                <tr>
+                    <th>Begin</th>
+                    <th>End</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Monday</td>
+                    <td rowspan="2">8:00 am</td>
+                    <td rowspan="2">5:00 pm</td>
+                    <td>Introduction to HTML</td>
+                </tr>
+                <tr>
+                    <td>Learning basics of HTML</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Tuesday</td>
+                    <td>8:00 am</td>
+                    <td>11:00 am</td>
+                    <td rowspan="2">Learning Semantic Element</td>
+                </tr>
+                <tr>
+                    <td>11:00 am</td>
+                    <td>2:00 pm</td>
+                </tr>
+                <tr>
+                    <td>2:00 pm</td>
+                    <td>5:00 pm</td>
+                    <td rowspan="1">Learning Attributes and entities</td>
+                </tr>
+                <tr>
+                    <td >Wednesday</td>
+                    <td>8:00 am</td>
+                    <td>12:00 am</td>
+                    <td >Complete HTML with Project</td>
+                </tr>
+                
+                
+                
+                
+
+                
+                
+                
+            </tbody>
+           
+        </table>
+    </section>
+
+
+    <!------------------------ Skill Section ------------------------>
+
+    <section>
         <h2>My Coding Knowledge</h2>
         <!-- Html -->
         <div class="skill-progess">
@@ -137,29 +220,40 @@ in Delhi. Tech stack include React, JavaScript, Node, SQL.">
         </div>
     </section>
 
+    <br>
+    <!-- Embed wikipedia web page on my website -->
+    <section>
+        <h2>Embeded other website (Wikipedia) into this website using iframe</h2>
+        <iframe src="https://www.wikipedia.org/" width="100%" height="300px" loading="lazy" frameborder="1"></iframe>
+    </section>
 
+    <br>
     <!-- Our Services Section -->
 
     <section class="service-container">
         <h2>Our Services</h2>
         <div style="display: flex;">
             <figure>
-                <img height="150px" width="250px"
-                    src="https://images.unsplash.com/photo-1560264280-88b68371db39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2VydmljZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1000&q=60"
-                    alt="some people are working on website">
-                <figcaption>Website Development</figcaption>
+                <a href="https://our-blogging-app.vercel.app/">
+                    <img height="150px" width="250px"
+                        src="https://images.unsplash.com/photo-1560264280-88b68371db39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2VydmljZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1000&q=60"
+                        alt="some people are working on website">
+                    <figcaption>Full Stack Developer</figcaption>
+                </a>
             </figure>
             <figure>
-                <img height="150px" width="250px"
-                    src="https://images.unsplash.com/photo-1560264280-88b68371db39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2VydmljZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1000&q=60"
-                    alt="some people are working on android apps">
-                <figcaption>Android App Development</figcaption>
+                <a href="https://benevolent-quokka-446cc4.netlify.app/">
+                    <img height="150px" width="250px"
+                        src="https://images.unsplash.com/photo-1560264280-88b68371db39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2VydmljZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1000&q=60"
+                        alt="some people are working on android apps">
+                    <figcaption>Frontend Developer (React)</figcaption>
+                </a>
             </figure>
             <figure>
                 <img height="150px" width="250px"
                     src="https://images.unsplash.com/photo-1560264280-88b68371db39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2VydmljZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1000&q=60"
                     alt="some people are working on desktop app">
-                <figcaption>Android App Development</figcaption>
+                <figcaption>Backend Developer (Node)</figcaption>
             </figure>
         </div>
     </section>
@@ -173,7 +267,7 @@ in Delhi. Tech stack include React, JavaScript, Node, SQL.">
         <article>
             <header>
                 <h3>What is HTML?</h3>
-                <ul>
+                <ol>
                     <li>HTML stands for Hyper Text Markup Language
                     </li>
                     <li>HTML is the standard markup language for creating Web pages</li>
@@ -182,11 +276,11 @@ in Delhi. Tech stack include React, JavaScript, Node, SQL.">
                     <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this
                         is a link", etc.</li>
 
-                </ul>
+                </ol>
             </header>
             <header>
                 <h3>2. What is CSS?</h3>
-                <ul>
+                <ul style="list-style-type:lower-alpha;">
                     <li>CSS stands for Cascading Style Sheets</li>
                     <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
                     <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
@@ -206,17 +300,17 @@ in Delhi. Tech stack include React, JavaScript, Node, SQL.">
 
 
 
-            <p><strong><em>Thanks you for the reading till the end.</em></strong></p>
+            <p><strong><em>Thanks </strong> you for the reading till the end.</em></p>
         </article>
     </section>
 
-<hr>
+    <hr>
 
     <!-- Audio Section -->
     <section class="my-audio">
         <h2>Please listen my introduction</h2>
         <audio controls autoplay muted src="">
-            <source/>
+            <source />
             Your browser does not supported the audio element.
         </audio>
 
@@ -224,8 +318,8 @@ in Delhi. Tech stack include React, JavaScript, Node, SQL.">
     <!-- Audio Section -->
     <section class="my-video">
         <h2>Please watch my introduction</h2>
-        <video controls autoplay muted src="">
-            <source/>
+        <video controls autoplay loop muted loading="lazy" src="video/videoforhtml.mp4" width="500px">
+            <source />
             Your browser does not supported the audio element.
         </video>
 
@@ -235,36 +329,39 @@ in Delhi. Tech stack include React, JavaScript, Node, SQL.">
 
     <section class="contact-container">
         <h2>Free free to contact me</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448193.9510353748!2d76.76356693388695!3d28.6442873523045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1694717131966!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448193.9510353748!2d76.76356693388695!3d28.6442873523045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1694717131966!5m2!1sen!2sin"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-<br>
-<br>
+        <br>
+        <br>
         <!-- Form Section -->
-    <form action="">
-        <div>
-            <label for="username">Enter Your name:</label>
-            <br>
-            <input type="text"  placeholder="Enter your name">
+        <form action="">
+            <div>
+                <label for="username">Enter Your name:</label>
+                <br>
+                <input type="text" placeholder="Enter your name">
 
-        </div>
-        <br>
-        <div>
-            <label for="email">Enter Your email:</label>
+            </div>
             <br>
-            <input type="email" id="email"  placeholder="Enter your username">
+            <div>
+                <label for="email">Enter Your email:</label>
+                <br>
+                <input type="email" id="email" placeholder="Enter your username">
 
-        </div>
-        <br>
-        <div>
-            <label for="textarea">Enter your message:</label>
+            </div>
             <br>
-            <textarea type="text" id="textarea"  cols="30" rows="10" placeholder="Enter your username">
+            <div>
+                <label for="textarea">Enter your message:</label>
+                <br>
+                <textarea type="text" id="textarea" cols="30" rows="10" placeholder="Enter your username">
                 </textarea>
 
 
-        </div>
-        <button>Submit</button>
-    </form>
+            </div>
+            <button>Submit</button>
+        </form>
     </section>
 
 
@@ -279,7 +376,7 @@ in Delhi. Tech stack include React, JavaScript, Node, SQL.">
     </footer>
 
 
-    
+
 
 
 
